@@ -8,7 +8,7 @@ class DBConect
 	{
 		if(!isset(self::$connection))
 		{
-			self::$connection = new mysqli("localhost","root","passDB","basedeDatos");
+			self::$connection = new mysqli("localhost","root","IkalDevs","Farq");
 		}
 		if(self::$connection === false)
 		{
