@@ -3,7 +3,7 @@
 class Activos
 {
 	private $conn;
-	private $table_name = "activos";
+	private $table_name = "reportes";
 
 	public $id;
 	public $nombre;
@@ -18,7 +18,7 @@ class Activos
 	}
 	function getAll()
 	{
-		$query = "SELECT * FROM".$this->table_name." WHERE estatus = 1 ORDER BY nombre";
+		$query = "SELECT * FROM ".$this->table_name;
 		return ($this->conn->select($query)) ? ($this->conn->select($query)) : false; 
 	}
 	function getById($id)
